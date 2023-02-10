@@ -1,5 +1,5 @@
 import { Link,useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import "./signup.css"
 
 
@@ -10,6 +10,15 @@ const Signup =()=>{
     const[email,setEmail]=useState("");
     const[password,setPassword]=useState("");
     const navigate =useNavigate();
+
+    useEffect(() => {
+        if(localStorage.getItem("user")){
+            navigate("/");
+        }
+    }, [])
+    
+
+
     const handleSignup=()=>{
         console.log(name,email,password);
         fetch("http://localhost:8080/user/signup/",{

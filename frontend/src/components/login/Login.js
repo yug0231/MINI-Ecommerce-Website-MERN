@@ -1,8 +1,15 @@
 import { Link,useNavigate } from "react-router-dom";
 import "./login.css"
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 
 const Login =()=>{
+    useEffect(() => {
+        if(localStorage.getItem("user")){
+            navigate("/");
+        }
+    }, [])
+    
+
     const[email,setEmail]=useState("");
     const[password,setPassword]=useState("");
     const navigate=useNavigate();
