@@ -4,14 +4,21 @@ const User = require('../schema/user')
 
 
 userRoutes.post("/signup",async(req,res)=>{
-    // const{name, password} = req.body;
+    const{email, password} = req.body;
     // console.log(name, password);
-    try{
-        const user = await User.create(req.body);
-        res.send(user);
-    }catch(err){
-        res.send("Unexpeccted Error Occured"+ err);
+    const check = await User.findOne({"email": `${email}`});
+    if(!check){
+        try{
+            const user = await User.create(req.body);
+            res.send(user);
+        }catch(err){
+            res.send("Unexpeccted Error Occured"+ err);
+        }
     }
+    else{
+        res.send("User Already Exists")
+    }
+    
 })
 userRoutes.post("/login",async(req,res)=>{
     const user = await User.findOne(req.body);

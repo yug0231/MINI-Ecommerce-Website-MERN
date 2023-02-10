@@ -1,4 +1,4 @@
-.login{
+    .signup{
     color: black;
     background-color: white;
     width: 40%;
@@ -7,12 +7,12 @@
     margin-top: 8%;
 }
 
-.login-container{
+.signup-container{
     width: 80%;
     background-color: white;
     margin: auto;
 }
-.login-container a{
+.signup-container a{
     text-decoration: none;
     color: salmon   
 } 
@@ -20,14 +20,14 @@
     width: 100%;
     display: flex;
 }
-.login-pg-btn{
+.signup-pg-btn{
     width: 100%;
     padding: 5px;
     border: 0px;
     font-size: 24px;
     margin: 10px auto 0px auto;
 }
-/* .login-pg-btn:focus{
+/* .signup-pg-btn:focus{
     background-color: #117A7A;
     color: white;
 } */
@@ -47,7 +47,7 @@
 .textinp:focus{
     border: 2px solid rgb(226, 87, 72);
 }
-.login-btn{
+.signup-btn{
     width: 70%;
     margin: auto;
     padding: 5px;
@@ -58,7 +58,7 @@
     padding:10px 0px 10px 10px;
     margin-bottom:20px ;
 }
-.login-btn:hover{
+.signup-btn:hover{
     width: 70%;
     margin: auto;
     padding: 5px;

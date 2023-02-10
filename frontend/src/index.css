@@ -1,9 +1,7 @@
 *{
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
-  /* background-color: #E6E7E8; */
-}
+  box-sizing: border-box;}
 
 
 body {
@@ -13,6 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #E6E7E8;
+
 }
 
 code {

@@ -1,0 +1,25 @@
+#navbar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: salmon;
+    color: white;
+}
+.navbar-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    text-align: left;
+    grid-template-columns: 40% 60%;
+}
+.nav-right{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: black;
+}
