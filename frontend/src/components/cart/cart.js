@@ -61,7 +61,7 @@ return <div>
         })
     }
     <div className='cart-total'>
-            <Link to="payment"><h3 className='proceedtopay-btn'>Proceed to pay ₹{cartTotal}</h3></Link>
+            <Link to="payment   "><h3 className='proceedtopay-btn'>Proceed to pay ₹{cartTotal}</h3></Link>
             {
                 localStorage.setItem('cartTotal', cartTotal)
             }

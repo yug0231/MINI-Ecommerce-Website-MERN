@@ -1,0 +1,11 @@
+.address-btn{
+    width: 70%;
+    margin: auto;
+    padding: 5px;
+    background-color: #EE5456;
+    color: white;
+    border: 0px solid white;
+    border-radius: 10px;
+    padding:10px 0px 10px 10px;
+    margin-bottom:20px ;
+}
