@@ -1,0 +1,49 @@
+.cart-box{
+    width: 80%;
+    border: 3px solid salmon;
+    border-radius: 20px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 30% 30% 15% 15% 10%;
+}
+.cart-box img{
+    width: 30%;
+    margin: auto;
+}
+.cart-box h2{
+    width: 80%;
+    margin: auto;
+}
+.qty-box{
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    font-size: 16px;
+    padding-left: 5%;
+}
+.rmv-btn{
+    width: 80%;
+    background-color: salmon;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 20%;
+    margin: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.proceedtopay-btn{
+    background-color: salmon;
+    padding: 10px;
+    width: 20%;
+    margin: auto;
+    border-radius: 10px;
+}

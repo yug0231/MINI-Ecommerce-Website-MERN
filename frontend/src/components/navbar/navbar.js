@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import ("./navbar.css")
 const Navbar =()=>{
     let navigate = useNavigate();
-    let auth=localStorage.getItem("user");
+    let auth=JSON.parse(localStorage.getItem("user"));
     const Logout =()=>{
         localStorage.clear();
         navigate("/");
@@ -17,7 +17,7 @@ const Navbar =()=>{
         {auth?<div className="nav-right">
             <Link to="/">Home</Link>
             <Link to="/cart">Cart</Link>
-            <Link onClick={Logout}>Logout</Link>
+            <Link onClick={Logout}>Logout({auth.name})</Link>
         </div>:
         <div className="nav-right">
             <Link to="/">Home</Link>
